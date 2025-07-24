@@ -1,12 +1,5 @@
-import db from "@/lib/db";
+import { Button } from "@/components/ui/button";
 
 export default async function Home() {
-  const user = await db.user.findFirst();
-
-  return (
-    <>
-      <h1>Hello from NextJS</h1>
-      <p>{JSON.stringify(user)}</p>
-    </>
-  );
+  return <Button>Submit</Button>;
 }
